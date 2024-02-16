@@ -1,0 +1,50 @@
+docker run -d --rm --name -p appport:dockerport image name
+Here is a list of some commonly used Docker commands:
+
+1. **docker run**: Create and start a container from an image.
+   Example: `docker run <image_name>`
+
+2. **docker build**: Build a Docker image from a Dockerfile.
+   Example: `docker build -t <image_name> .`
+
+3. **docker pull**: Fetch an image from a registry.
+   Example: `docker pull <image_name>`
+
+4. **docker push**: Push an image to a registry.
+   Example: `docker push <image_name>`
+
+5. **docker ps**: List running containers.
+   Example: `docker ps`
+
+6. **docker ps -a**: List all containers (including stopped ones).
+   Example: `docker ps -a`
+
+7. **docker images**: List available images.
+   Example: `docker images`
+
+8. **docker rm**: Remove one or more containers.
+   Example: `docker rm <container_id>`
+
+9. **docker rmi**: Remove one or more images.
+   Example: `docker rmi <image_id>`
+
+10. **docker stop**: Stop one or more running containers.
+    Example: `docker stop <container_id>`
+
+11. **docker start**: Start one or more stopped containers.
+    Example: `docker start <container_id>`
+
+12. **docker exec**: Run a command in a running container.
+    Example: `docker exec -it <container_id> <command>`
+
+13. **docker logs**: Fetch the logs of a container.
+    Example: `docker logs <container_id>`
+
+14. **docker inspect**: Display detailed information about a container or image.
+    Example: `docker inspect <container_or_image_id>`
+
+15. **docker-compose**: Manage multi-container Docker applications with a YAML file (docker-compose.yml).
+    Example: `docker-compose up` (to start containers defined in docker-compose.yml)
+
+16. **docker-compose down**: Stop and remove containers, networks, and volumes defined in the docker-compose.yml file.
+    Example: `docker-compose down`
