@@ -1,4 +1,4 @@
-docker run -d --rm --name "myapp" -p appport:dockerport image name
+docker run -d --rm --name "myapp" -p appport:dockerport image ID / Repositry : tag
 Here is a list of some commonly used Docker commands:
 
 1. **docker run**: Create and start a container from an image.
