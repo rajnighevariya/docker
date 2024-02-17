@@ -1,5 +1,7 @@
 docker run -d --rm --name "myapp" -p appport:dockerport image ID / Repositry : tag
 
+docker run -d --env ROOT_PASSWORD="root" --env ROOT_USER="user" --name myapp network my-net mysql
+
 remane 
 docker tag myapp:01 phil/webapp:01
 Here is a list of some commonly used Docker commands:
