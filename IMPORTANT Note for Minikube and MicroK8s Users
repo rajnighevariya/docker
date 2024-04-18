@@ -1,0 +1,26 @@
+
+Minikube Users
+This note only pertains to students who have decided to use Minikube instead of Docker Desktop's built-in Kubernetes.
+
+Recent versions of Minikube will use the docker driver by default when you run minikube start. On Windows or macOS, the docker driver is not compatible with an ingress, which we will be using throughout the course.
+
+https://minikube.sigs.k8s.io/docs/drivers/docker/#known-issues
+
+https://github.com/kubernetes/minikube/issues/7332
+
+macOS
+
+We highly recommend macOS students use Docker Desktop's Kubernetes instead of Minikube. If you must use Minikube or prefer to use it, you can pass the --driver flag with a specific driver or --vm=true
+
+minikube start --vm=true
+
+minikube start --driver=hyperkit
+
+minikube start --driver=virtualbox
+
+Windows
+
+Windows students should be using Docker Desktop with WSL2 and not Minikube. A VM driver will not work since it would require virtualization that is in conflict with WSL2.
+
+MicroK8s Users
+This course does not support the use of MicroK8s and will likely not work in the way that is presented. We highly suggest the use of Docker Desktop for macOS and Windows users and Minikube for Linux users. If you choose to use MicroK8s you will need to do your own research and refactoring to resolve the issues that may arise.
